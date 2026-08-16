@@ -1,0 +1,35 @@
+// Theme Color Palette
+$bg-dark-primary: #180529;
+$bg-dark-secondary: #2e0d52;
+$bg-dark-tertiary: #120320;
+
+$purple-accent-primary: #6c2bd9;
+$purple-light-text: #c084fc;
+$purple-gradient-end: #e9d5ff;
+
+$border-subtle: rgba(255, 255, 255, 0.1);
+$border-badge: rgba(192, 132, 252, 0.25);
+$badge-bg: rgba(108, 43, 217, 0.2);
+$status-green: #4ade80;
+
+:root {
+  --bg-dark-primary: #{$bg-dark-primary};
+  --bg-dark-secondary: #{$bg-dark-secondary};
+  --bg-dark-tertiary: #{$bg-dark-tertiary};
+
+  --purple-accent-primary: #{$purple-accent-primary};
+  --purple-light-text: #{$purple-light-text};
+  --purple-gradient-end: #{$purple-gradient-end};
+
+  --border-subtle: #{$border-subtle};
+  --border-badge: #{$border-badge};
+  --badge-bg: #{$badge-bg};
+  --status-green: #{$status-green};
+}
+
+// Global reset to prevent Vuetify's default dark background showing through
+html, body, .v-application {
+  background-color: var(--bg-dark-primary) !important;
+  color: #ffffff;
+  min-height: 100vh;
+}

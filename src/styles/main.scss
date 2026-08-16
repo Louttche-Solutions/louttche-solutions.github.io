@@ -1,0 +1,47 @@
+@layer vuetify-overrides {
+  code, pre, .v-code {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Ensure list icons keep their space and don't wrap above text */
+.v-list-item__icon {
+  min-width: 36px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Tighter card default padding for consistent layout */
+.pa-8 {
+  padding: 24px !important;
+}
+
+/* App-level main padding */
+.app-main {
+  padding-top: 88px; /* ensure content sits below fixed app-bar */
+  padding-bottom: 32px;
+}
+
+/* Center content and constrain width for a professional layout */
+.site-wrap {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Typography rhythm */
+h1, .text-h2 {
+  line-height: 1.1;
+}
+
+h2, .text-h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Card visual polish */
+.v-card {
+  border-radius: 12px;
+}
